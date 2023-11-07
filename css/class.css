@@ -1,0 +1,63 @@
+.box {
+    height: 8vh;
+    width: 26vw;
+}
+
+.face {
+    height: 8vh;
+    width: 26vw;
+    
+    position: fixed;
+}
+
+.face div {
+    height: 100%;
+    width: 100%;
+    
+    font-size: 4vh;
+    border: 3px solid rgb(90, 90, 90);
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.up {
+    transform-origin: top center;
+    scale: 1 0;
+}
+
+.up div {
+    transform-origin: bottom center;
+    transform: perspective(3rem) rotateX(10deg);
+    background-color: aqua;
+}
+
+.down {
+    transform-origin: bottom center;
+    scale: 1 0;
+}
+
+.down div {
+    transform-origin: top center;
+    transform: perspective(3rem) rotateX(-10deg);
+    background-color: tomato;
+}
+
+.active {
+    scale: 1 1;
+}
+
+.active div {
+    transform: perspective(3rem) rotateX(0deg);
+}
+
+.active,
+.active div,
+.up,
+.up div,
+.down,
+.down div {
+    transition: 0.5s;
+}

@@ -30,7 +30,7 @@
 
 .up div {
     transform-origin: bottom center;
-    transform: perspective(3rem) rotateX(10deg);
+    transform: perspective(5vw) rotateX(10deg);
     background-color: aqua;
 }
 
@@ -41,7 +41,7 @@
 
 .down div {
     transform-origin: top center;
-    transform: perspective(3rem) rotateX(-10deg);
+    transform: perspective(5vw) rotateX(-10deg);
     background-color: tomato;
 }
 
@@ -50,7 +50,7 @@
 }
 
 .active div {
-    transform: perspective(3rem) rotateX(0deg);
+    transform: perspective(5vw) rotateX(0deg);
 }
 
 .active,

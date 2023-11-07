@@ -1,20 +1,20 @@
 .box {
-    height: 8vh;
-    width: 26vw;
+    height: 16vmin;
+    width: 46vmin;
 }
 
 .face {
-    height: 8vh;
-    width: 26vw;
-    
+    height: 16vmin;
+    width: 46vmin;
+
     position: fixed;
 }
 
 .face div {
     height: 100%;
     width: 100%;
-    
-    font-size: 4vh;
+
+    font-size: 8vmin;
     border: 3px solid rgb(90, 90, 90);
 
     display: flex;
@@ -30,7 +30,7 @@
 
 .up div {
     transform-origin: bottom center;
-    transform: perspective(5vw) rotateX(10deg);
+    transform: perspective(5vmin) rotateX(10deg);
     background-color: aqua;
 }
 
@@ -41,7 +41,7 @@
 
 .down div {
     transform-origin: top center;
-    transform: perspective(5vw) rotateX(-10deg);
+    transform: perspective(5vmin) rotateX(-10deg);
     background-color: tomato;
 }
 
@@ -50,7 +50,7 @@
 }
 
 .active div {
-    transform: perspective(5vw) rotateX(0deg);
+    transform: perspective(5vmin) rotateX(0deg);
 }
 
 .active,
